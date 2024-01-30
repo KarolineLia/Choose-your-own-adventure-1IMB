@@ -1,0 +1,58 @@
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Choose your own adventure - 1IMB</title>
+</head>
+<body>
+    <!--Starten på historien-->
+    <section>
+        <h1>The ruins of a kingdom</h1>
+        <div>
+            <a class="start" href="#1">Start</a>
+        </div>
+    </section>
+    <section id="1"><!--Section får id 1 slik at vi kan bli sendt hit ved hjelp av <a href="#">-->
+        <article>
+            <h2>The ruins of a kingdom</h2>
+            <p>Hello and welcome to <span class="title">The ruins of a kingdom.</span> This is a <span class="bold">choose your own adventure</span> fantasy story that you control.</p>
+            <p>This story takes place in a far away kingdom that has met some misfortune. A band of orcs attacked the peaceful kingdom of "MÅ KOMME PÅ NAVN". The king (you)
+                must travel land and sea to find a magical sword that can help restore the kingdom and fight of the invading orcs.</p>
+            <p>Ready to become a king?</p>    
+        </article>
+        <div class="aDiv">
+            <a href="#2">Yes, I'm ready!</a><!--Her blir vi sendt til section med id 2 for å skape bruker interaksjon-->
+            <a href="#dead-end1">No, I would like to wait</a>
+        </div>
+    </section>
+    <section id="2">
+        <article>
+            <h2>Chapter 1 - the escape</h2>
+            <p>My breathing was shaky, I narrowly managed to leap from the castle walls, I escaped with my life, but I can’t say the same for the rest of my people. A large group of Orks swept through my kingdom, killing anyone in their way. I was powerless to stop them, as regular weaponry did nothing against their thick skin.</p>
+            <p>I have heard tales of a magically enchanted sword forged by Andúril, which is the only weapon that can pierce their skin. Last I heard, the sword was in possession by the elves. I'll try to reach their kingdom in hopes of getting their help, though it might be futile.</p>
+            <p>Regardless, every step I take is a step towards victory, towards justice...</p>
+            <p>Towards my kingdoms and peoples revival</p>
+            <p>As you run away from the castle walls you hear the war cries of the orcs. <span class="italic">Shit, I have to move fast</span></p>
+        </article>
+        <div class="aDiv">
+            <a href="#">Run towards the woods</a>
+            <a href="#">Take the kings road towards the elven city Ilalean</a>
+        </div>
+    </section>
+    <!--Her starter sluttene våre-->
+    <section id="dead-end1">
+        <article>
+            <h2>Ending 1</h2>
+            <p>No worries, you can come back whenever you want!</p>
+        </article>
+        <div class="aDiv">
+            <a href="#2">I'm ready now!</a>
+            <a href="#1">I'm ready, but I would like to read the intro again</a>
+        </div>
+    </section>
+    <script>
+       //Kode kommer her
+    </script>
+</body>
+</html>
