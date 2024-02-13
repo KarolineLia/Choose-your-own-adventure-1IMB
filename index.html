@@ -36,8 +36,22 @@
             <p>As you run away from the castle walls you hear the war cries of the orcs. <span class="italic">Shit, I have to move fast</span></p>
         </article>
         <div class="aDiv">
-            <a href="#">Run towards the woods</a>
-            <a href="#">Take the kings road towards the elven city Ilalean</a>
+            <a href="#3">Run towards the woods</a>
+            <a href="#3">Take the kings road towards the elven city Ilalean</a>
+        </div>
+    </section>
+    <section id="3">
+        <article>
+            <h2>Test</h2>
+            <p>Tester array</p>
+        </article>
+        <div class="buttonDiv" id="choice1">
+            <button onclick="pickup('banan', 'choice1', 'aDiv1')">Banan</button>
+            <button onclick="pickup('melk', 'choice1', 'aDiv1')">Melk</button>
+        </div>
+        <div class="aDiv" id="aDiv1" style="display: none;">
+            <a href="#">Test 1</a>
+            <a href="#">Test 2</a>
         </div>
     </section>
     <!--Her starter sluttene våre-->
@@ -52,7 +66,20 @@
         </div>
     </section>
     <script>
-       //Kode kommer her
+       let backpack = []
+
+       function check(item, button, div){
+            if(backpack.includes(item)){
+                document.getElementById(button).style.display = "none"
+                document.getElementById(div).style.display = "flex"
+            }
+       }
+
+       function pickup(item, button, div){
+            backpack.push(item)
+            console.log(backpack)
+            check(item, button, div)
+       }
     </script>
 </body>
 </html>
